@@ -1,0 +1,117 @@
+01_Virtualsierung
+
+Berechnug: Gesamter OS - 4GB verteilen auf HV-DC , HV-SQL1, HV-SQL2
+Unter der Annahme: 
+DC benötigt kaum Ressourcen
+HVSQL1 HauptSQLInstanz
+HVSQL2 eigtl nur zur INstallartion , sowie Backrup Restore las Ausfallserver gedacht
+
+VM an Umgebung bei Bedarf anpassen
+RAM einstellen
+CPU einstellen
+NUMA Hardwarekonfiguration übernehmen
+Maschinen starten
+
+
+02_Setup
+Installation angepasst an Umgebung
+RAM empfohlen
+Security gemischt (SA ppedv2023!)
+Sich selbst als Admin hinzufügen
+MAXDOP übernehmen 
+Pfade anpassen C:\Pfad statt C:\Prgram Files\...
+Feature : DB Modul inklVolltext, Replikation
+Filestreaming: wie es beliebt
+DienstKonten
+Agent: 	Dom\svcAgent
+SQL: 	Dom\svcSQL
+Tempdb Vorschlag übernehmen evtl Pfad kürzen
+
+03_Serversettings
+Kontrolle des HV-SQL1 gemäß "was haben wir beim Setup gelernt"
+MAXDOP
+Pfade
+Anzahl CPUs
+Tempdb Anzahl der Dateien
+MAX RAM einstellen
+
+
+04_DBSettings
+DB anlegen gemäß best practice angepasst 
+Mtl zuwachs 10 MB 
+Laufzeit 3 jahre
+
+05_SystemDBs
+WarTungsplan Sicherung der SystemDBs täglich Mo bis Fr um 12:30
+
+
+06_DBObjekte
+Lege eine Tabelle an
+Bestellungen (Orderid, Fracht, Datum, KundeNr..) mit PK
+
+
+Ändere die Sicht Invoices und ergänze sie um Lastname und Firtname des Angestellten
+
+07_Agent
+Lege eine Demojob an der 
+5 Schritte enthält
+TSQL Select 100 bis select 500
+Zeitplan jede Stunde von 9 bis 17 Uhr
+Einmalzeitplan, der in 1 min startet
+
+Füge anschlissend einen neuen Schritt ein select 600
+
+08_Email
+konfiguriere das Mailsystem und versende eine Testnachricht
+
+09_ Operator
+lege eine Operator an, der zu deinen SMTP Settings passt zb: hvsql1@sql.local Name SQladmin
+
+10_Warnung
+Definiere eine Warnung für Lv 14 inkl Nachricht an Operator
+
+11_Backup
+
+GEneriere ein Script für Voll, Diff und Logsicherung
+Führe diese jeweisl einzeln aus:
+V TTT D TTT D TTT
+
+12_Restore
+Unter anderen Namen
+auf Server HV-SQL2
+ersetze DB durch Backup mit möglichst ohen Datenverlust
+Generiere Snapshot
+
+13: Login erstellen für Max und Evi
+ZUgriff auf Northwind
+Schema IT und MA
+Evi in MA (Lesen)
+Max in IT Lesen
+Evi auch IT Tabellex lesen
+Evi auch Sicht erstellen
+
+14_ Erstellle Proxykonto für CMD und PS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
