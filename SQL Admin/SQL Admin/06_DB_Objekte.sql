@@ -63,7 +63,7 @@ select * from (select * from customers ) c
 
 --Prozeduren
 -
---Proc ist nich tmit normalen Abfragen kombinierbar (JOINS)
+--Proc ist nicht mit normalen Abfragen kombinierbar (JOINS)
 --immer wiederkehrende (komplexere) Vorgänge  mit Parametern
 --ähnlich wie Windows Batchdateien
 

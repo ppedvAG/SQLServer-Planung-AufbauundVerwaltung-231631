@@ -28,6 +28,8 @@ hängt von der Wachstumsrate ab..
 
 siehe Skript zu VLF
 
+dbcc loginfo() -- viel wäre 3000 oder 6000
+
 
 --man sollte einfach nicht mehr als 3000 / 5000 VLF
 

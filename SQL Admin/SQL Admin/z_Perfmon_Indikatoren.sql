@@ -4,7 +4,7 @@ andreasr@ppedv.de
 Prozessor: Prozessorzeit
 Diese sollte natürlich nicht auf Dauer allzu hoch sein. Messunen über 50% bis 60%, sollten abgeklärt werden (Auslagerungen, Kompilierungen etc)
 PhysicalDisk: AverageDiskQueueLength
-Dieser Wert sollten nicht über 2 sein. Der Wert gibt nämlich an, ob Der physik. Datenträger Daten schnell genug wegschreiben kann.
+Dieser Wert sollten nicht über 2 sein. Der Wert gibt nämlich an, ob Der physik. Datenträger Daten schnell genug wegschreiben oder lesen kann .
 Speicher: Seiten/sec
 Seiten, die entweder vom Speicher auf den Datenträger geschrieben werden oder davon gelesen und in den Sepicher geschrieben werden. Der Wert sollte auf Dauer kleiner als 20 sein.
 BufferManager: BufferCacheHitRatio
