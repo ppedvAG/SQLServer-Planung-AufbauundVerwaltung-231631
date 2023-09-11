@@ -3,7 +3,7 @@
 /*
 Ebenen:
 16...  DAU
-15 .. Depp
+15 .. Superdau
 14... kein Recht
 1-10 reine Infos
 17.. uff Arbeit
