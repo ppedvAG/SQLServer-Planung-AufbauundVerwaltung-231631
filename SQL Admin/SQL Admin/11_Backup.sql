@@ -156,3 +156,86 @@ RESTORE LOG [Kurs2014DB] FROM  DISK = N'D:\_BACKUP\Kurs2014DB.bak' WITH  FILE = 
 GO
 
 
+--Dateien sind da aber Seerver weg
+--Dateien sind akt als jedes backup
+
+use [master];
+GO
+USE [master]
+GO
+
+GO
+USE [master]
+GO
+ALTER DATABASE [sqldb1] SET  OFFLINE
+GO
+
+
+select * from sys.sysfiles
+
+
+
+--Sicherungsplan
+
+/*
+DB Größe:  300GB
+
+Wie lange darf die DB max ausfallen?  1 Woche
+
+Wie groß darf der Datenverlust in Zeit sein?  5h
+
+Verwendung: werktags   6 Uhr    bis 16 Uhr
+
+
+Ist der Restore in der ang Zeit nicht zu schaffen
+--> Hochverfügbarkeit (Cluster / Availability Groups)
+--> Mirroring (depricated)
+
+---5h Datenverlust: RecoveryModel = Einfach
+
+--V und D
+--V .. wie lange dauert vermutlich das Backup
+
+select 300000 / 300  /60
+--Bak = 100 GB oder weniger
+
+--V jeden Tag um 18 Uhr ausser SA und So 
+--D werktags alle 3 h von 9 Uhr bis 15:05 
+
+v D D D v
+
+
+auf sek das letzte jahr
+2 bis 3 Jahre pro Woche eine V Sicherung
+älter nur 1 V pro Monat
+
+
+
+
+
+
+
+
+
+
+
+/*
+DB Größe:  300GB
+
+Wie lange darf die DB max ausfallen?  1 h
+
+Wie groß darf der Datenverlust in Zeit sein?  30min
+So exakt wie möglich | möglichst ohne Datenverlust
+
+Verwendung: werktags   6 Uhr    bis 16 Uhr
+
+Model: Full
+
+V -- jeden Tag (wt) um 20 Uhr Uhr ausser SA und So 
+D -- jeden Tag (wt) alle 2 Ts  7:15 bis 15:15
+T -- jeden Tag (wt) alle 30min 6:30 bis 16:00
+ 
+
+
+*/
+

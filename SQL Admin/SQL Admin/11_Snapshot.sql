@@ -25,7 +25,7 @@ ON
 use northwind;
 GO
 
-update customers set city = 'BGH' where customerid = 'ALFKI'
+update customers set city = 'XXX' where customerid = 'ALFKI'
 
 select * from customers
 
@@ -43,7 +43,7 @@ select * from customers
 
 select * from Northwind..customers
 except
-select * from nw_1400..customers
+select * from [SN_nwind_1220]..customers
 
 
 --kann man den SN restoren?
@@ -57,6 +57,8 @@ select * from nw_1400..customers
 --alle user müssen von allen DBs (northwind und Snapshot) verscheucht werden
 use master;
 GO
+
+--der Restore geht nur, wenn alle Connections beendet wurden
 
 restore database northwind
 from database_snapshot ='nw_1400'
@@ -78,3 +80,4 @@ select * from sysprocesses
 			dbid in (db_id('northwind'), db_id('SN_nwind_1220'))
 
 
+kill 81
