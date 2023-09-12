@@ -29,6 +29,14 @@ Wirklich ideal
 MAXDOP = Anzahl der log Prozessoren (max 8)
 -->eigenes Kapitel
 
+unbedingt den Kostenschwellwert anpassen 
+OLTP (Shop) 50
+OLAP    25
+Maxdop kann aber auch pro DB eingestellt werden
+
+--SUSPENDED-->RUNNABLE-->RUNNING
+
+
 TempDB
 #tabellen, Zeilenversionierung
 IX Wartung, Auslagerungen beim Sortieren etwa

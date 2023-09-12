@@ -18,7 +18,7 @@ Profil
 		öfftl Profil (Mitglied einer Gruppe: DatabaseMailuserRole  msdb)   Rolle = Gruppe
 		privates Profile  gezielte direkte Rechtevergabe am Profil
 
-Unter Verwaltuing legt man das Profil an und gibt entsprechend die Infos ein
+Unter Verwaltung legt man das Profil an und gibt entsprechend die Infos ein
 Evtl kommt eine Meldung: Broker etc muss aktiviert sein.. Ja ! sonst keine Mail:-(
 
 Systemparameter. Evtl Anhanggröße von 1 MB  10MB einstellen...
@@ -32,11 +32,11 @@ Systemparameter. Evtl Anhanggröße von 1 MB  10MB einstellen...
 
 Assisten richtet alles ein
 --> Achtung
-GAST hat Recht auf Profil bekommen!
+GAST hat Recht auf Profil bekommen!!
 
 Nach Einrichten des Profiles:
 
-bis dato: Mails können veschickt werden.. per TSQL 
+bis dato: Mails können veschickt werden.. per TSQL gehts
 aber nicht der Agent ;-) kein Auftrag versendet Mails..!
 
 

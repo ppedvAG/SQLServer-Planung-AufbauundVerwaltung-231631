@@ -2,15 +2,16 @@
 
 /*
 Ebenen:
-16...  DAU
-15 .. Superdau
+16...  DAU fehlende Objekte
+15 .. Superdau Syntaxfehler
 14... kein Recht
 1-10 reine Infos
-17.. uff Arbeit
+---------------------
+17.. uff Arbeit  unzureichende Ressourcen
 ..
-23.. muss aufs Klo
-24.. bist auf dem Klo und suchst verzweifelt Auswege
-25  bist auf dem Klo und buchst Last Minute reisen,, die sofort losgehen
+23.. muss aufs Klo  Tabellenintegr.
+24.. bist auf dem Klo und suchst verzweifelt Auswege DB Integrität
+25  bist auf dem Klo und buchst Last Minute reisen,, die sofort losgehen  Systemausfall steht bevor
 
 
 

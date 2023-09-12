@@ -2,63 +2,94 @@
 <SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="SQL Admin">
   <Items>
     <LogicalFolder Name="Verbindungen" Type="2" Sorted="true">
-      <Items />
+      <Items>
+        <ConnectionNode Name="BIGBEN:BIGBEN\Administrator">
+          <Created>2023-09-11T09:22:45.9167802+02:00</Created>
+          <Type>SQL</Type>
+          <Server>BIGBEN</Server>
+          <UserName />
+          <Authentication>Windows-Authentifizierung</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Abfrage</ApplicationName>
+        </ConnectionNode>
+      </Items>
     </LogicalFolder>
     <LogicalFolder Name="Abfragen" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="01_Virtualisierung.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>01_Virtualisierung.sql</FullPath>
+        </FileNode>
+        <FileNode Name="02_Setup.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>02_Setup.sql</FullPath>
+        </FileNode>
         <FileNode Name="03_Serversettings.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>03_Serversettings.sql</FullPath>
         </FileNode>
         <FileNode Name="04_DBSettings.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>04_DBSettings.sql</FullPath>
         </FileNode>
         <FileNode Name="05_SystemDBs.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>05_SystemDBs.sql</FullPath>
         </FileNode>
         <FileNode Name="06_DB_Objekte.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>06_DB_Objekte.sql</FullPath>
         </FileNode>
         <FileNode Name="07_Agent.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>07_Agent.sql</FullPath>
         </FileNode>
         <FileNode Name="08_Dababasemail.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>08_Dababasemail.sql</FullPath>
         </FileNode>
         <FileNode Name="09_Operatoren.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>09_Operatoren.sql</FullPath>
         </FileNode>
         <FileNode Name="10_Warnungen.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>10_Warnungen.sql</FullPath>
         </FileNode>
         <FileNode Name="11_Backup.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>11_Backup.sql</FullPath>
+        </FileNode>
+        <FileNode Name="11_Snapshot.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>11_Snapshot.sql</FullPath>
         </FileNode>
         <FileNode Name="12_Restore.sql">
           <AssociatedConnectionMoniker />
@@ -145,8 +176,8 @@
           <FullPath>Z_Fehlende Indizes.sql</FullPath>
         </FileNode>
         <FileNode Name="z_Perfmon_Indikatoren.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BIGBEN:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BIGBEN</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>z_Perfmon_Indikatoren.sql</FullPath>
         </FileNode>
